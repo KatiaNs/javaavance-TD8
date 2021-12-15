@@ -25,6 +25,33 @@ public class Main5 {
 		}
 
 	}
+	
+	
+	public static <T> void melanger2(List<? extends T> list) {
+		Random rand = new Random();
+		
+		T[] o = (T[]) list.toArray();
+		List list2 = new ArrayList<>();
+		
+		for(int i = 0; i< list.size(); i++) {
+			int j = rand.nextInt(i);
+			//echange(list, i, j);
+			T temp = o[i-1];
+			o[i-1] = o[j];
+			o[j] = temp;
+		}
+		
+		for(int i=0; i<o.length; i++) {
+			list2.add(o[i]);
+		}
+
+		
+	}
+	
+	public static <T> void melanger3(List list) {
+		Collections.shuffle(list);
+		
+	}
 
 
 }
