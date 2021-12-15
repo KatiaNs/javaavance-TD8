@@ -27,7 +27,7 @@ public class Main5 {
 	}
 	
 	
-	public static <T> void melanger2(List<? extends T> list) {
+	public static <T> void melanger2(List<T> list) {
 		Random rand = new Random();
 		
 		T[] o = (T[]) list.toArray();
