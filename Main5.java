@@ -48,7 +48,7 @@ public class Main5 {
 		
 	}
 	
-	public static <T> void melanger3(List list) {
+	public static <T> void melanger3(List<T> list) {
 		Collections.shuffle(list);
 		
 	}
